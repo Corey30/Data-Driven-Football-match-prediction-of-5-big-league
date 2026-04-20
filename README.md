@@ -9,7 +9,7 @@
 ### 🎯 预测联赛
 
 - 🏴󐁧󐁢󐁥󐁮󐁧󐁿 **英超** (English Premier League - EPL)
-- 🇪🇸 **西甲** (Spanish La Liga)
+- 🇪🇸 **西甲** (Spanish La Liga): 本项目提供了西甲17-25赛季数据
 - 🇮🇹 **意甲** (Italian Serie A)
 - 🇩🇪 **德甲** (German Bundesliga)
 - 🇫🇷 **法甲** (French Ligue 1)
@@ -34,17 +34,7 @@
 | **主客场因素** | 主场优势相关特征 |
 | **其他因素** | 天气、场地等条件（如适用） |
 
-## 🛠️ 技术栈
 
-| 技术 | 版本 | 用途 |
-|------|------|------|
-| **Python** | 3.x | 核心编程语言 |
-| **Pandas** | ≥1.3.0 | 数据处理和分析 |
-| **NumPy** | ≥1.21.0 | 数值计算 |
-| **Scikit-learn** | ≥1.0.0 | 机器学习模型 |
-| **LightGBM** | ≥3.3.0 | 梯度提升模型 |
-| **Matplotlib** | ≥3.5.0 | 数据可视化 |
-| **Joblib** | ≥1.1.0 | 模型序列化 |
 
 ## 📁 项目结构
 
@@ -168,13 +158,6 @@ python scripts/predict.py
 ✓ 混淆矩阵 (Confusion Matrix)
 ```
 
-## 💡 主要特性
-
-- 🎯 **高精准度** - 多模型融合提升预测准确性
-- ⚡ **高效处理** - 优化的数据处理和模型训练流程
-- 📊 **可视化分析** - 直观的数据和预测结果展示
-- 🔍 **可解释性** - 提供特征重要性分析
-- 📱 **易使用** - 简洁的API和清晰的文档
 - 🔄 **可扩展** - 支持添加新的数据源和模型
 
 ## 📝 使用示例
@@ -192,14 +175,6 @@ raw_data = load_data('data/raw/matches.csv')
 processed_data = preprocess_data(raw_data)
 ```
 
-### 特征工程
-
-```python
-from src.feature_engineering import engineer_features
-
-# 提取特征
-features = engineer_features(processed_data)
-```
 
 ### 模型训练
 
@@ -223,49 +198,13 @@ predictions = predict(model, test_data)
 
 欢迎贡献代码、报告问题或提出建议！
 
-### 贡献步骤
 
-1. **Fork** 本项目
-2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启一个 **Pull Request**
-
-### 贡献规范
-
-- 确保代码风格一致
-- 添加必要的注释和文档
-- 编写单元测试
-- 更新 README（如需要）
-
-## 📚 文档和资源
-
-- 📖 [项目 Wiki](../../wiki) - 详细的技术文档和教程
-- 💬 [Discussions](../../discussions) - 讨论区
-- 🐛 [Issues](../../issues) - 报告问题或请求功能
-
-## 📋 使用许可
-
-本项目采用 **MIT License** 开源许可证 - 详见 [LICENSE](LICENSE) 文件
 
 ## 👤 作者
 
 **Corey30**
 
 - GitHub: [@Corey30](https://github.com/Corey30)
-
-## 💬 联系与支持
-
-如有任何问题或建议，欢迎通过以下方式联系：
-
-- 🐛 [提交 Issue](../../issues/new)
-- 💬 [参与讨论](../../discussions/new)
-
-## 🙏 致谢
-
-感谢所有为此项目做出贡献的人！
-
----
 
 ## English
 
